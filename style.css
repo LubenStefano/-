@@ -1,0 +1,143 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: linear-gradient(
+    to bottom,
+    rgb(234, 253, 253),
+    rgb(4, 130, 233),
+    rgb(0, 0, 0)
+  );
+}
+.frontHeader {
+  font-size: 50px;
+  font-family: bad script;
+  color: white;
+  text-shadow: 0px 0px 20px black;
+  text-decoration: underline;
+  font-size: 30px;
+  text-align: center;
+}
+.header {
+  font-family: Alice;
+}
+.meaning {
+  width: 800px;
+  font-style: italic;
+  text-align: center;
+}
+.ranking {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 65%;
+  font-size: 20px;
+  background-color: white;
+  margin-left: 330px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.692);
+}
+.app {
+  display: flex;
+  flex-flow: row;
+  align-items: baseline;
+  justify-content: space-around;
+  margin-top: 10px;
+  margin-bottom: 100px;
+  border-radius: 5px;
+  width: 800px;
+}
+.appNameAndLogo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  font-style: italic;
+}
+.appNameAndLogo img {
+  margin-left: 20px;
+  width: 40px;
+  transition: 0.3s;
+}
+.appNameAndLogo h2 {
+  font-size: 40px;
+}
+.app-Info {
+  width: 50%;
+}
+.aside {
+  display: flex;
+  flex-direction: column;
+  font-style: italic;
+}
+.aside img {
+  width: 150px;
+  transition: width 0.25s;
+}
+.appNameAndLogo {
+  display: flex;
+}
+.aside img:hover {
+  width: 200px;
+}
+.appNameAndLogo img:hover {
+  width: 50px;
+}
+@media only screen and (max-width: 767px) {
+  body {
+    background: linear-gradient(
+      to bottom,
+      rgb(234, 253, 253),
+      rgb(4, 130, 233),
+      rgb(0, 0, 0)
+    );
+  }
+
+  .frontHeader {
+    font-size: 30px;
+  }
+
+  .ranking {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .app {
+    flex-flow: column;
+    align-items: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .appNameAndLogo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .appNameAndLogo img {
+    margin-left: 0;
+    margin-bottom: 10px;
+    width: 90px;
+  }
+
+  .app-Info {
+    width: 100%;
+  }
+
+  .aside img {
+    width: 40%;
+    display: inline;
+  }
+  .meaning {
+    flex-flow: column;
+    align-items: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
