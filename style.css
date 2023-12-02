@@ -62,12 +62,29 @@ margin: 0%;
 width: 95%;
 height: 80%;
 }
+.dropdown{
+  font-weight: bold;
+  font-family: Alice;
+  font-style:italic;
+  font-size: 40px;
+  border: 1px solid transparent;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.459);
+}
 .content {
+width: 50%;
 font-size: 45px;
-text-decoration: none;
-margin-bottom: 200px;
+margin-bottom: 100px;
 padding-left: 110px;
 padding-right: 110px;
+}
+.dropdowncontent{
+  display: none;
+  position: relative;
+  z-index: 1;
 }
 .content ul{
   background-color: white;
@@ -79,6 +96,7 @@ padding-right: 110px;
 .content li a{
   text-decoration: none;
   color: rgba(0, 0, 0, 0.767);
+  transition: 0.25s;
 }
 .socialmedia-meaning{
   display: flex;
@@ -171,6 +189,12 @@ width: 80%;
 .nav-links :hover{
   text-decoration:line-through;
   font-size:22px;
+}
+.dropdowncontent a:hover{
+  background-color: rgb(233, 233, 233)
+}
+.content:hover .dropdowncontent {
+  display: block;
 }
 
 @media only screen and (max-width: 600px) {
